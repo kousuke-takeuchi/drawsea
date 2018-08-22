@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ $# -ne 1 ]; then
+  echo "Usage: activate <env>"
+  exit 1
+fi
+
+source $PYENV_ROOT/versions/anaconda3-5.2.0/bin/activate $1
